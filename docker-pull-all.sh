@@ -15,13 +15,14 @@ tykio/tyk-dashboard
 tykio/tyk-gateway
 
 #reqfoot apps
+rundeck/rundeck:3.3.3
+librenms/librenms
 maxking/mailman-web
 maxking/mailman-core
 sipwise/mr8.4.2
 lovasoa/wbo
 pipech/erpnext-docker-debian
 huginn/huginn
-rundeck/rundeck
 mikesplain/openvas
 killbill/kaui
 killbill/killbill
@@ -30,8 +31,6 @@ wazuh/wazuh
 wazuh/wazuh-nginx
 ducatel/reviewboard
 oxidized/oxidized
-librenms/librenms
-jordan/rundeck
 
 #Support infra
 redis
@@ -58,7 +57,7 @@ wordpress
 IFS=$'\n\t'
 
 for dockerImg in ${reqfootContainerList[@]}; do
-sudo docker pull $dockerImg
+docker pull $dockerImg
 done
 
 
