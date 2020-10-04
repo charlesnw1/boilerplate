@@ -7,6 +7,8 @@ reqfootContainerList=(
 #TSYS Corporate IT
 nikisweeting/archivebox
 
+
+
 #TSYS Enteprise IT
 docker.elastic.co/elasticsearch/elasticsearch-oss:7.9.2-amd64
 bitwardenrs/server
@@ -30,6 +32,7 @@ wazuh/wazuh
 wazuh/wazuh-nginx
 ducatel/reviewboard
 oxidized/oxidized
+jenkins
 
 #Support infra
 redis
@@ -47,6 +50,7 @@ rroemhild/mailpile
 
 #RackRental
 wordpress
+#Add OpenFAAS bits here....
 )
 
 
