@@ -8,7 +8,7 @@ reqfootContainerList=(
 nikisweeting/archivebox
 
 #TSYS Enteprise IT
-docker.elastic.co/elasticsearch/elasticsearch-oss
+docker.elastic.co/elasticsearch/elasticsearch-oss:7.9.2-amd64
 bitwardenrs/server
 tykio/tyk-pump-docker-pub
 tykio/tyk-dashboard
@@ -21,7 +21,6 @@ maxking/mailman-web
 maxking/mailman-core
 sipwise/mr8.4.2
 lovasoa/wbo
-pipech/erpnext-docker-debian
 huginn/huginn
 mikesplain/openvas
 killbill/kaui
@@ -47,12 +46,16 @@ nats-streaming
 rroemhild/mailpile
 
 #RackRental
-openfaas/gateway
-openfaas/queue-worker
-openfaas/faas-swarm
-openfaas/basic-auth-plugin
 wordpress
 )
+
+
+#tofix
+#pipech/erpnext-docker-debian
+#openfaas/gateway
+#openfaas/queue-worker
+#openfaas/faas-swarm
+#openfaas/basic-auth-plugin
 
 IFS=$'\n\t'
 
