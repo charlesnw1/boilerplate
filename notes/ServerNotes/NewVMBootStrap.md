@@ -8,14 +8,6 @@ TBD (see https://git.turnsys.com/TSGTechops/ConfigMgmt)
 
 (soon to be legacy content follows...)
 
-## setup k3s (we won’t have any virtual machines that aren’t k3s servers or agents) 
-
-### server
-curl -sfL https://get.k3s.io | sh -s - server --datastore-endpoint=<load balanced mysql url>/k3s" --no-deploy servicelb --no-deploy traefik
-
-### agent 
-(obtain from your local friendly k3s server)
-
 ## setup basics 
 
 ### ssh pub key pull 
