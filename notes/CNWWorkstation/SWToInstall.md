@@ -1,3 +1,10 @@
+#Workstation notes
+
+This has notes on the setup of my two workstations:
+
+* Lab workstation (also doubles as offline root CA admin station )
+* Developer workstation
+
 
 ## lab workstation (Dell venue 10 running Ubuntu 20.04)
 
@@ -10,20 +17,25 @@
 
 ### Software to install
 
-- kleopatra
-- balena etcher
-- yubikey personalization manager 
-- yubikey  *
-- veracrypt
-- opensc
-- libimobiledevice
 - Sigrok (pulse)
 - Bitscope full suite
 - Microscope software
 
+## PKI admin workstation (Dell venue 10 running Ubuntu 20.04)
+
+Customized live distro on USB stick (will release the build soon)
+
+### Software to install
+
+* yubikey personalization manager 
+* yubikey(all the debs)
+* kleopatra
+* veracrypt
+* opensc
 
 
 ## Personal workstation VM (Ubuntu 18.04)
+
 
 ### utilities/admin
 
@@ -75,31 +87,44 @@
 - art of illusion
 
 
-#### IDE
-- VS Code
-- Eclipse
-- Netbeans
-- android studio 
-- rstudio (with microsoft r-open)
-- Arduino
-- codeblocks
-- embitz
-- Xilinx
+### IDE / developer stuff
+* build-essential
+* apt install apt-src
+* apt src install xca
 
-#### GIS
+* Microsoft R
+* rstudio (with microsoft r-open)
+
+* VS Code
+* Arduino
+
+* Eclipse
+* Netbeans
+* android studio 
+* codeblocks
+* embitz
+* Xilinx
+* docker/docker-compose
+* Postgresql
+* Mariadb
+
+### GIS
 - grass gis
 - qgis
 - udig
 - worldwind 
 
-#### Scientitic/math/data acquistion
+### Scientitic/math/data acquistion
 - octave
 - paraview
 - onelab
 - scilab
 - bitscope (client)
 
-#### SDR
+### SDR
 - gnuradio-3.7
 - sdrsharp
 - cubicsdr
+
+### Build from source
+* xca (latest stable from homepage)
