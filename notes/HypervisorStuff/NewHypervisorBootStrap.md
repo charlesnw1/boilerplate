@@ -10,13 +10,18 @@ Do everything that is done on a VM
 
 ### Packages
 apt update ; apt -y full-upgrade 
+apt --purge -y remove multipath-tools dnsmasq-base nano
 apt --purge -y autoremove
 apt -y install \
 	--no-install-recommends \
-	lldp logwatch snmpd nfs-common nut-client \
-	htop xsensors glances dstat \
-	xorgxrdp xrdp lxde \
+	lldpd logwatch snmpd nfs-common nut-client bridge-utils vlan\
+	htop xsensors glances dstat gnome-system-monitor \
+	xorgxrdp xrdp lxde ksmtuned \
+	smartmontools smart-notifier hddtemp lm-sensors \
 	qemu-kvm virt-manager libvirt-daemon-system \
+    spice-client-gtk libspice-client-gtk-3.0-5 gir1.2-spiceclientgtk-3.0 
+
+
 
 ### Networking
 
