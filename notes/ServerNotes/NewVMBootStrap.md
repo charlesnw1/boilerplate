@@ -6,18 +6,19 @@ become just:
 ## install aviary and apply 
 TBD (see https://git.turnsys.com/TSGTechops/ConfigMgmt)
 
+
+
 (soon to be legacy content follows...)
 
 ## setup basics 
 
 ### ssh pub key pull 
 
-
 ### basic package bits
 
 apt update ; apt -y full-upgrade 
-apt-get --purge -y remove nano snapd lvm2 
 apt-get -y install logwatch molly-guard tuned snmpd
+apt-get --purge -y remove nano snapd lvm2 mdadm multipath-tools
 apt update ; apt -y full-upgrade 
 
 ### root mail
@@ -35,7 +36,9 @@ bash <(curl -Ss https://my-netdata.io/kickstart.sh)
 /etc/sudoers.d/localuser
 localuser ALL=(ALL) NOPASSWD: ALL
 
-### webmin
+### install webmin
 
 
+### join domain
+univention-domain-join-cli --dc-ip 10.222.3.100 --username charles --password-file pw --skip-login-manager
 
