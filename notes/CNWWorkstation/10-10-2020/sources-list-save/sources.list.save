@@ -46,8 +46,3 @@ deb http://us.archive.ubuntu.com/ubuntu bionic-security main restricted
 deb http://us.archive.ubuntu.com/ubuntu bionic-security universe
 # deb-src http://us.archive.ubuntu.com/ubuntu bionic-security universe
 deb http://us.archive.ubuntu.com/ubuntu bionic-security multiverse
-# deb-src http://us.archive.ubuntu.com/ubuntu bionic-security multiverse
-deb https://qgis.org/ubuntu bionic main
-# deb-src https://qgis.org/ubuntu bionic main
-deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
-# deb-src [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable

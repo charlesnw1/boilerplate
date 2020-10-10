@@ -260,7 +260,6 @@ digikam-private-libs				install
 dirmngr						install
 dispcalgui					install
 distro-info-data				install
-dmeventd					install
 dmidecode					install
 dmsetup						install
 dmz-cursor-theme				install
@@ -293,6 +292,7 @@ eatmydata					install
 ebtables					install
 ed						install
 eject						install
+elasticsearch-oss				install
 element-desktop					install
 elementary-icon-theme				install
 emacsen-common					install
@@ -308,6 +308,9 @@ eq10q						install
 espeak						install
 espeak-data:amd64				install
 espeak-ng-data:amd64				install
+etcd						install
+etcd-client					install
+etcd-server					install
 ethtool						install
 evince						install
 evince-common					install
@@ -750,6 +753,7 @@ gnumeric					install
 gnumeric-common					install
 gnumeric-doc					install
 gnupg						install
+gnupg-agent					install
 gnupg-l10n					install
 gnupg-utils					install
 gnupg2						install
@@ -1428,7 +1432,6 @@ libdevel-caller-perl				install
 libdevel-globaldestruction-perl			install
 libdevel-lexalias-perl				install
 libdevel-stacktrace-perl			install
-libdevmapper-event1.02.1:amd64			install
 libdevmapper1.02.1:amd64			install
 libdigest-hmac-perl				install
 libdirectfb-1.7-7:amd64				install
@@ -1662,7 +1665,6 @@ libgeocode-glib0:amd64				install
 libgeoip1:amd64					install
 libgeonames-common				install
 libgeonames0:amd64				install
-libgeos-3.6.2:amd64				install
 libgeos-3.7.1:amd64				install
 libgeos-c1v5:amd64				install
 libgeotiff2:amd64				install
@@ -2399,8 +2401,6 @@ liblua5.1-0:amd64				install
 liblua5.2-0:amd64				install
 liblua5.3-0:amd64				install
 liblucene4.10-java				install
-liblvm2app2.2:amd64				install
-liblvm2cmd2.02:amd64				install
 liblwp-mediatypes-perl				install
 liblwp-protocol-https-perl			install
 liblwres160:amd64				install
@@ -2624,7 +2624,6 @@ libotr5						install
 libots0						install
 liboxygenstyle5-5				install
 liboxygenstyleconfig5-5				install
-libp11-3:amd64					install
 libp11-kit-dev:amd64				install
 libp11-kit0:amd64				install
 libpackage-deprecationmanager-perl		install
@@ -2688,7 +2687,6 @@ libphonon4qt5-4:amd64				install
 libpipeline1:amd64				install
 libpisock9					install
 libpixman-1-0:amd64				install
-libpkcs11-helper1:amd64				install
 libplacebo4:amd64				install
 libplasma-geolocation-interface5		install
 libplasma3					install
@@ -3547,9 +3545,11 @@ manpages					install
 manpages-dev					install
 marble-data					install
 marble-plugins					install
+mariadb-client					install
 mariadb-client-10.5				install
 mariadb-client-core-10.5			install
 mariadb-common					install
+mariadb-server					install
 mariadb-server-10.5				install
 mariadb-server-core-10.5			install
 mate-calc					install
@@ -3635,7 +3635,6 @@ nginx-common					install
 nginx-core					install
 nmap						install
 nodejs						install
-nodejs-doc					install
 notification-daemon				install
 notmuch						install
 notmuch-vim					install
@@ -3837,6 +3836,7 @@ pinentry-curses					install
 pinentry-gnome3					install
 pinentry-gtk2					install
 pinentry-qt					install
+pipexec						install
 pitivi						install
 pkg-config					install
 plasma-dataengines-addons			install
