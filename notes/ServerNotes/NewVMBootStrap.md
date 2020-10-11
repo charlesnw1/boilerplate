@@ -17,7 +17,7 @@ TBD (see https://git.turnsys.com/TSGTechops/ConfigMgmt)
 ### basic package bits
 
 apt update ; apt -y full-upgrade 
-apt-get -y install logwatch molly-guard tuned snmpd
+apt-get -y install logwatch molly-guard tuned snmpd sysstat glances atop pcp htop
 apt-get --purge -y remove nano snapd lvm2 mdadm multipath-tools
 apt update ; apt -y full-upgrade 
 
