@@ -4848,6 +4848,7 @@ xul-ext-ubufox					install
 xwayland					install
 xxd						install
 xz-utils					install
+yarn						install
 yelp						install
 yelp-xsl					install
 yhsm-tools					install
