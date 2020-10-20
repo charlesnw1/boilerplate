@@ -1,5 +1,6 @@
 #Global Variables used by the framework
 
-project_includes="0"
+ProjectIncludes="0"
+DesiredArgumentCount="0"
 
 #Global Variables used by the project

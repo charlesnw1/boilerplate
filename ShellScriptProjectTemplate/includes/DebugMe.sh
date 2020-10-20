@@ -1,4 +1,4 @@
-function debugme() {
+function DebugMe() {
  [[ $script_debug = 1 ]] && "$@" || :
 
 #to turn debugging on, set script_debug=1
