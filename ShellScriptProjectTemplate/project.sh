@@ -1,9 +1,7 @@
 #!/bin/bash
 
-export PS4='+(${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
-
-#Variables for this project
-source $0-vars
+#Framework variables are read from hee
+source vars/FrameworkVars
 
 #Boilerplate and support functions
 FrameworkIncludeFiles="$(ls -1 --color=none includes/*)"
@@ -29,40 +27,37 @@ fi
 #Core framework functions...
 #####
 
-StrictMode
 
-export ArgCounter="0"
-ProgramArguments=("$@")
-while [ $ArgCounter -lt $# ]
-do
-    arg=${ProgramArguments[$ArgCounter]}
-    let ArgCounter=ArgCounter+1
-    export nextArg=${ProgramArguments[$ArgCounter]}
-
-            argKey="$arg"
-            export argVal="$nextArg"
-            export skipNext=1
-
-case "$argKey" in
-        --blah1)
-            key="value"
-        ;;
-        --blah2)
-            key="value"
-        ;;
-        --blah3)
-            key="value"
-        ;;
-        -h|--help|-help|--h)
-            LocalHelp
-            exit
-        ;;
-        
-    esac
+while [ ! -z "$1" ];do
+   case "$1" in
+        -h|--help)
+          LocalHelp
+          ;;
+        -k1|--key1)
+          shift
+          KEY1="$1"
+          echo "key 1 is $KEY1"
+          ;;
+        -k2|--key2)
+          shift
+          KEY2="$1"
+          echo "key 2 is $KEY2"
+          ;;
+        *)
+	echo "Displaying $0 help..."
+	LocalHelp
+   esac
+shift
 done
+
 
 function main()
 {
+StrictMode
+
+if [ PreflightCheck = 1 ]; then
+PreflightCheck
+fi
 
 #Your custom logic here....
 echo "Custom logic here..."
