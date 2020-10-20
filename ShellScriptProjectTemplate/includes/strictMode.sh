@@ -1,4 +1,4 @@
-function strictMode()
+function StrictMode()
 {
 
 # This is a function I include and execute in every shell script that I write. 

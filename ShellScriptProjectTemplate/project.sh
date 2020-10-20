@@ -2,6 +2,9 @@
 
 export PS4='+(${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
 
+#Variables for this project
+source $0-vars
+
 #Boilerplate and support functions
 commonIncludeFiles="$(ls -1 --color=none includes/*)"
 
@@ -11,7 +14,24 @@ for file in ${commonIncludeFiles[@]}; do
 done
 unset IFS
 
-#Variables for this project
-source $0-vars
+StrictMode
 
-LocalHelp
+if [[ project_includes = 1 ]]; then
+projectIncludeFiles="$(ls -1 --color=none project-includes/*)"
+IFS=$'\n\t'
+for file in ${projectIncludeFiles[@]}; do
+	. "$file"
+done
+unset IFS
+fi
+
+
+function main()
+{
+
+#Your custom logic here....
+
+
+}
+
+main

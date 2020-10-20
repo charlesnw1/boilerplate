@@ -1,1 +1,5 @@
-#Global Variables used by this project
+#Global Variables used by the framework
+
+project_includes="0"
+
+#Global Variables used by the project
