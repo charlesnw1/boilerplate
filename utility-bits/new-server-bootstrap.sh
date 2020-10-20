@@ -28,7 +28,7 @@ export DOMAIN_NAME=$(hostname -d)
 #Static /etc/hosts bits
 
 #Dynamic /etc/hosts bits
-#Vince-added -s to hostname to account for FQDN in ks file
+#added -s to hostname to account for FQDN in ks file
 
 export FULLHOST=$(hostname -f)
 export SHORTHOST=$(hostname -s)
